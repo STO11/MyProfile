@@ -4,11 +4,11 @@ import 'package:myprofileweb/generated/l10n.dart';
 import 'drawings/background.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyProfileApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class MyProfileApp extends StatelessWidget {
+  const MyProfileApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
