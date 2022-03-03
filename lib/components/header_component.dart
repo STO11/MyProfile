@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myprofileweb/components/avatar_component.dart';
 import 'package:myprofileweb/components/stats_component.dart';
+import 'package:myprofileweb/generated/l10n.dart';
 import 'package:myprofileweb/languages/languages.dart';
 
 class Header extends StatefulWidget {
@@ -33,7 +34,7 @@ class _HeaderState extends State<Header> {
             height: MediaQuery.of(context).size.height / 12,
           ),
           Text(
-            lang.mySkillsSection,
+            S.of(context).myTechnicalSkillsSection,
             style: const TextStyle(fontSize: 40, color: Colors.white),
           ),
           SizedBox(
