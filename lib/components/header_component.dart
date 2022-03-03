@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:myprofileweb/components/avatar_component.dart';
 import 'package:myprofileweb/components/stats_component.dart';
 import 'package:myprofileweb/generated/l10n.dart';
-import 'package:myprofileweb/languages/languages.dart';
 
 class Header extends StatefulWidget {
   const Header({Key? key}) : super(key: key);
@@ -42,7 +41,7 @@ class _HeaderState extends State<Header> {
           SizedBox(
             width: MediaQuery.of(context).size.width / 2,
             child: const StatsComponent(),
-          ),
+          )
         ],
       ),
     );
