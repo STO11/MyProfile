@@ -3,14 +3,14 @@ import 'package:myprofileweb/components/avatar_component.dart';
 import 'package:myprofileweb/components/stats_component.dart';
 import 'package:myprofileweb/generated/l10n.dart';
 
-class Header extends StatefulWidget {
-  const Header({Key? key}) : super(key: key);
+class Body extends StatefulWidget {
+  const Body({Key? key}) : super(key: key);
 
   @override
-  _HeaderState createState() => _HeaderState();
+  _BodyState createState() => _BodyState();
 }
 
-class _HeaderState extends State<Header> {
+class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myprofileweb/components/header_component.dart';
+import 'package:myprofileweb/components/body_component.dart';
 import 'package:myprofileweb/generated/l10n.dart';
 import 'package:myprofileweb/paints/background.dart';
 
@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
       title: 'Suelton',
       home: Scaffold(
         body: Stack(children: [
-          CustomPaint(painter: MyPainter(), child: Container()),
-          const Header()
+          CustomPaint(painter: BackgroundPainter(), child: Container()),
+          const Body()
         ]),
       ),
     );
