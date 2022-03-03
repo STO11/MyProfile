@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Stack(children: [
           CustomPaint(painter: BackgroundPainter(), child: Container()),
-          const Body()
+          const BodyComponent()
         ]),
       ),
     );
