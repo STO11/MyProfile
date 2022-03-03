@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myprofileweb/components/body_component.dart';
 import 'package:myprofileweb/generated/l10n.dart';
-import 'package:myprofileweb/paints/background.dart';
+import 'drawings/background.dart';
 
 void main() {
   runApp(const MyApp());
