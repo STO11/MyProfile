@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myprofileweb/components/avatar_component.dart';
+import 'package:myprofileweb/components/stats_component.dart';
 import 'package:myprofileweb/paints/background.dart';
 
 import 'languages/languages.dart';
@@ -33,6 +34,7 @@ class Header extends StatefulWidget {
 }
 
 class _HeaderState extends State<Header> {
+  final lang = Languages();
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -45,10 +47,24 @@ class _HeaderState extends State<Header> {
           SizedBox(
             width: MediaQuery.of(context).size.width / 2,
             child: Text(
-              Languages().aboutMe,
+              lang.aboutMe,
               style: const TextStyle(fontSize: 20, color: Colors.white),
               textAlign: TextAlign.justify,
             ),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 12,
+          ),
+          Text(
+            lang.mySkillsSection,
+            style: const TextStyle(fontSize: 40, color: Colors.white),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 12,
+          ),
+          SizedBox(
+            width: MediaQuery.of(context).size.width / 2,
+            child: const StatsComponent(),
           ),
         ],
       ),

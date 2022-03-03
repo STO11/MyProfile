@@ -30,6 +30,8 @@ dependencies:
   flutter:
     sdk: flutter
   avatar_glow: ^2.0.2
+  step_progress_indicator: ^1.0.2
+  animate_do: ^2.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
