@@ -36,74 +36,32 @@ class _BodyComponentState extends State<BodyComponent> {
       );
     }
 
-    _containerChange({width}) {
-      if (tabController.tab == 0) {
-        return SizedBox(width: width, child: const StatsComponent());
-      }
-      return Text('MUDOU');
-    }
-
-    _chooseTable({context}) {
-      return Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          IconButton(
-            color: Colors.white,
-            iconSize: 60,
-            icon: const Icon(Icons.arrow_left),
-            onPressed: () => {
-              tabController.decrementTabs(),
-            },
-          ),
-          Text(
-            tabController.changeLangTitle(context: context),
-            style: const TextStyle(fontSize: 40, color: Colors.white),
-          ),
-          IconButton(
-            color: Colors.white,
-            iconSize: 60,
-            icon: const Icon(Icons.arrow_right),
-            onPressed: () => {
-              tabController.incrementTabs(),
-            },
-          ),
-        ],
-      );
-    }
-
     return Obx(
       () => Stack(alignment: Alignment.topCenter, children: [
         SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(width: MediaQuery.of(context).size.width),
+              SizedBox(width: Get.width),
               const AvatarComponent(),
               ResponsiveWidget(
-                mobile: _textAboutMe(
-                    width: MediaQuery.of(context).size.width / 1.2),
-                tablet: _textAboutMe(
-                    width: MediaQuery.of(context).size.width / 1.4),
-                web: _textAboutMe(
-                    width: MediaQuery.of(context).size.width / 1.8),
+                mobile: _textAboutMe(width: Get.width / 1.2),
+                tablet: _textAboutMe(width: Get.width / 1.4),
+                web: _textAboutMe(width: Get.width / 1.8),
               ),
               SizedBox(
                 height: MediaQuery.of(context).size.height / 12,
               ),
-              // ignore: prefer_const_constructors
-              _chooseTable(context: context),
+              tabController.chooseTable(context: context),
               SizedBox(
                 height: MediaQuery.of(context).size.height / 12,
               ),
               ResponsiveWidget(
-                mobile: _containerChange(
-                    width: MediaQuery.of(context).size.width / 1.2),
-                tablet: _containerChange(
-                    width: MediaQuery.of(context).size.width / 1.4),
-                web: _containerChange(
-                    width: MediaQuery.of(context).size.width / 1.8),
+                mobile:
+                    tabController.containerTabChange(width: Get.width / 1.2),
+                tablet:
+                    tabController.containerTabChange(width: Get.width / 1.4),
+                web: tabController.containerTabChange(width: Get.width / 1.8),
               ),
-              Text(tabController.tab.toString())
             ],
           ),
         ),

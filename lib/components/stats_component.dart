@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myprofileweb/constants/skills.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
 class StatsComponent extends StatelessWidget {
@@ -7,50 +8,21 @@ class StatsComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [
-        Text('PHP / Laravel',
-            style: TextStyle(fontSize: 30, color: Colors.white)),
-        StepProgressIndicator(
-          totalSteps: 10,
-          currentStep: 9,
-          selectedColor: Colors.red,
-          unselectedColor: Colors.yellow,
-        ),
-        SizedBox(
-          height: 40,
-        ),
-        Text('React Native',
-            style: TextStyle(fontSize: 30, color: Colors.white)),
-        StepProgressIndicator(
-          totalSteps: 10,
-          currentStep: 8,
-          selectedColor: Colors.red,
-          unselectedColor: Colors.yellow,
-        ),
-        SizedBox(
-          height: 40,
-        ),
-        Text('NodeJS', style: TextStyle(fontSize: 30, color: Colors.white)),
-        StepProgressIndicator(
-          totalSteps: 10,
-          currentStep: 6,
-          selectedColor: Colors.red,
-          unselectedColor: Colors.yellow,
-        ),
-        SizedBox(
-          height: 40,
-        ),
-        Text('Flutter', style: TextStyle(fontSize: 30, color: Colors.white)),
-        StepProgressIndicator(
-          totalSteps: 10,
-          currentStep: 5,
-          selectedColor: Colors.red,
-          unselectedColor: Colors.yellow,
-        ),
-        SizedBox(
-          height: 40,
-        ),
-      ],
-    );
+        children: skills
+            .map((item) => Column(children: [
+                  Text(item['name'].toString(),
+                      style:
+                          const TextStyle(fontSize: 30, color: Colors.white)),
+                  StepProgressIndicator(
+                    totalSteps: totalSteps,
+                    currentStep: item['step'] as int,
+                    selectedColor: Colors.red,
+                    unselectedColor: Colors.yellow,
+                  ),
+                  const SizedBox(
+                    height: 40,
+                  )
+                ]))
+            .toList());
   }
 }

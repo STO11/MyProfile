@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
+import 'package:get/instance_manager.dart';
 import 'package:myprofileweb/constants/lang.dart';
 import 'package:myprofileweb/generated/l10n.dart';
 import 'package:myprofileweb/utils/resolution.dart';
@@ -23,7 +25,7 @@ class HeaderComponent extends StatelessWidget {
                   Image.asset('./assets/images/eua.png', width: 40, height: 40),
             ),
           ),
-          SizedBox(width: MediaQuery.of(context).size.width / 60),
+          SizedBox(width: Get.width / 60),
           MouseRegion(
             cursor: SystemMouseCursors.click,
             child: GestureDetector(
@@ -43,12 +45,9 @@ class HeaderComponent extends StatelessWidget {
       color: Colors.black26,
       height: MediaQuery.of(context).size.height / 20,
       child: ResponsiveWidget(
-        mobile: _flagsLangs(
-            width: MediaQuery.of(context).size.width / 10, context: context),
-        tablet: _flagsLangs(
-            width: MediaQuery.of(context).size.width / 8, context: context),
-        web: _flagsLangs(
-            width: MediaQuery.of(context).size.width / 4.7, context: context),
+        mobile: _flagsLangs(width: Get.width / 10, context: context),
+        tablet: _flagsLangs(width: Get.width / 8, context: context),
+        web: _flagsLangs(width: Get.width / 4.7, context: context),
       ),
     );
   }
