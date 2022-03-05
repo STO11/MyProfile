@@ -49,11 +49,11 @@ class _BodyComponentState extends State<BodyComponent> {
                 web: _textAboutMe(width: Get.width / 1.8),
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height / 12,
+                height: Get.height / 12,
               ),
               tabController.chooseTable(context: context),
               SizedBox(
-                height: MediaQuery.of(context).size.height / 12,
+                height: Get.height / 12,
               ),
               ResponsiveWidget(
                 mobile:

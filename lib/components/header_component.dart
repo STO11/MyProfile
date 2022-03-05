@@ -43,7 +43,7 @@ class HeaderComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.black26,
-      height: MediaQuery.of(context).size.height / 20,
+      height: Get.height / 20,
       child: ResponsiveWidget(
         mobile: _flagsLangs(width: Get.width / 10, context: context),
         tablet: _flagsLangs(width: Get.width / 8, context: context),
