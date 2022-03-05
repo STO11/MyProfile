@@ -16,16 +16,22 @@ class HeaderComponent extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           MouseRegion(
-              cursor: SystemMouseCursors.click,
-              child: GestureDetector(
-                  onTap: () => onPressedLangChange(enLang),
-                  child: Image.asset('images/eua.png', width: 40, height: 40))),
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              onTap: () => onPressedLangChange(enLang),
+              child:
+                  Image.asset('./assets/images/eua.png', width: 40, height: 40),
+            ),
+          ),
           SizedBox(width: MediaQuery.of(context).size.width / 60),
           MouseRegion(
-              cursor: SystemMouseCursors.click,
-              child: GestureDetector(
-                  onTap: () => onPressedLangChange(ptLang),
-                  child: Image.asset('images/br.png', width: 40, height: 40))),
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              onTap: () => onPressedLangChange(ptLang),
+              child:
+                  Image.asset('./assets/images/br.png', width: 40, height: 40),
+            ),
+          ),
         ],
       ),
     );
@@ -35,7 +41,7 @@ class HeaderComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.black26,
-      height: MediaQuery.of(context).size.height / 30,
+      height: MediaQuery.of(context).size.height / 20,
       child: ResponsiveWidget(
         mobile: _flagsLangs(
             width: MediaQuery.of(context).size.width / 10, context: context),

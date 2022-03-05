@@ -79,6 +79,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Experiences`
+  String get myExperiences {
+    return Intl.message(
+      'Experiences',
+      name: 'myExperiences',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Soft skills`
+  String get softSkills {
+    return Intl.message(
+      'Soft skills',
+      name: 'softSkills',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

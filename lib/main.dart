@@ -1,8 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:myprofileweb/components/body_component.dart';
 import 'package:myprofileweb/constants/lang.dart';
+import 'package:myprofileweb/controllers/lang_controller.dart';
 import 'package:myprofileweb/generated/l10n.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'constants/strings.dart';
@@ -24,7 +26,7 @@ class _MyProfileAppState extends State<MyProfileApp> {
   @override
   Widget build(BuildContext context) {
     S.load(const Locale(defaultLang));
-    return MaterialApp(
+    return GetMaterialApp(
       localizationsDelegates: const [
         S.delegate,
         GlobalMaterialLocalizations.delegate,
