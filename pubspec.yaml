@@ -39,6 +39,7 @@ dependencies:
   octo_image: ^1.0.1
   get: ^4.6.1
   google_fonts: ^2.3.0
+  responsive_framework: ^0.1.7
 
 dev_dependencies:
   flutter_localizations:
