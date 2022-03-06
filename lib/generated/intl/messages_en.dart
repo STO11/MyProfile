@@ -35,6 +35,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "\n\n InfoPublic was my first job, it was a company that worked for local public companies. I was responsible been for the migration of many public projects to the web."),
         "descriptionJoin": MessageLookupByLibrary.simpleMessage(
             "\n\n Join is a software development company, which i was allocated to work in the Port of Santos system, transforming the system to legacy to a new web system, despite the short time i got greatting results and knowledge agregates."),
+        "languages": MessageLookupByLibrary.simpleMessage("languages"),
         "myExperiences": MessageLookupByLibrary.simpleMessage("Experiences"),
         "myTechnicalSkillsSection":
             MessageLookupByLibrary.simpleMessage("Hard skills"),
@@ -58,6 +59,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "softSTolerance": MessageLookupByLibrary.simpleMessage(
             "Resilience, tolerance and flexibility"),
         "softSkills": MessageLookupByLibrary.simpleMessage("Soft skills"),
+        "technical": MessageLookupByLibrary.simpleMessage("Technical"),
         "title": MessageLookupByLibrary.simpleMessage("My Profile")
       };
 }

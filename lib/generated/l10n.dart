@@ -269,6 +269,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Technical`
+  String get technical {
+    return Intl.message(
+      'Technical',
+      name: 'technical',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `languages`
+  String get languages {
+    return Intl.message(
+      'languages',
+      name: 'languages',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

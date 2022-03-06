@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myprofileweb/constants/skills.dart';
+import 'package:myprofileweb/generated/l10n.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
 class StatsComponent extends StatelessWidget {
@@ -10,8 +11,8 @@ class StatsComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Text('Technical',
-            style: TextStyle(
+        Text(S.of(context).technical,
+            style: const TextStyle(
                 fontSize: 32,
                 color: Colors.white,
                 fontWeight: FontWeight.bold)),
@@ -33,8 +34,8 @@ class StatsComponent extends StatelessWidget {
                       )
                     ]))
                 .toList()),
-        const Text('Languages',
-            style: TextStyle(
+        Text(S.of(context).languages,
+            style: const TextStyle(
                 fontSize: 32,
                 color: Colors.white,
                 fontWeight: FontWeight.bold)),

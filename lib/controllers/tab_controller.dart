@@ -67,13 +67,15 @@ class TabControllerSkills extends GetxController {
 
   containerTabChange({width}) {
     if (tab.value == 0) {
-      return SizedBox(width: width, child: const StatsComponent());
+      // ignore: prefer_const_constructors
+      return SizedBox(width: width, child: StatsComponent());
     }
     if (tab.value == 1) {
       return SizedBox(width: width, child: TimeLinePage());
     }
     if (tab.value == 2) {
-      return SizedBox(width: width, child: const SoftSkillsPage());
+      // ignore: prefer_const_constructors
+      return SizedBox(width: width, child: SoftSkillsPage());
     }
     if (tab.value == 3) {
       return SizedBox(width: width, child: const ContactPage());
