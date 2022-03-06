@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myprofileweb/components/stats_component.dart';
 import 'package:myprofileweb/generated/l10n.dart';
+import 'package:myprofileweb/pages/contact_page.dart';
+import 'package:myprofileweb/pages/softskills_page.dart';
 import 'package:myprofileweb/pages/timeline_page.dart';
 
 class TabControllerSkills extends GetxController {
   var tab = 0.obs;
-  var maxTabs = 3;
+  var maxTabs = 4;
 
   incrementTabs() {
     if (tab < maxTabs - 1) {
@@ -28,10 +30,12 @@ class TabControllerSkills extends GetxController {
         return S.of(context).myExperiences;
       case 2:
         return S.of(context).softSkills;
+      case 3:
+        return S.of(context).contact;
     }
   }
 
-  chooseTable({context}) {
+  chooseTabs({context}) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       mainAxisSize: MainAxisSize.min,
@@ -46,7 +50,8 @@ class TabControllerSkills extends GetxController {
         ),
         Text(
           changeLangTitle(context: context),
-          style: const TextStyle(fontSize: 40, color: Colors.white),
+          style: const TextStyle(
+              fontSize: 40, color: Colors.white, fontWeight: FontWeight.bold),
         ),
         IconButton(
           color: Colors.white,
@@ -67,7 +72,11 @@ class TabControllerSkills extends GetxController {
     if (tab.value == 1) {
       return SizedBox(width: width, child: TimeLinePage());
     }
-
-    return Text('MUDOU' + tab.value.toString());
+    if (tab.value == 2) {
+      return SizedBox(width: width, child: const SoftSkillsPage());
+    }
+    if (tab.value == 3) {
+      return SizedBox(width: width, child: const ContactPage());
+    }
   }
 }

@@ -17,4 +17,19 @@ class ExperienceController extends GetxController {
         return S.of(context).descriptionInfoPublic;
     }
   }
+
+  changeLangRange({context, id}) {
+    switch (id) {
+      case 5:
+        return S.of(context).rangeDasa;
+      case 4:
+        return S.of(context).rangeDextra;
+      case 3:
+        return S.of(context).rangeJoin;
+      case 2:
+        return S.of(context).rangeBredi;
+      case 1:
+        return S.of(context).rangeInfoPublic;
+    }
+  }
 }

@@ -15,18 +15,42 @@ class TimeLinePage extends StatelessWidget {
     return TimelineTile(
       alignment: TimelineAlign.manual,
       lineXY: 0.3,
-      indicatorStyle: const IndicatorStyle(color: Colors.yellow),
+      indicatorStyle: IndicatorStyle(
+          padding: const EdgeInsets.all(10),
+          color: Colors.yellow,
+          iconStyle: IconStyle(
+            iconData: Icons.downloading_outlined,
+            color: Colors.black,
+            fontSize: 20,
+          )),
       endChild: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: Colors.black12,
+        ),
         constraints: BoxConstraints(
           minHeight: Get.width / constraintFactor,
         ),
-        color: Colors.black12,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            const Divider(
+              color: Colors.white,
+            ),
+            SizedBox(height: Get.height / 30),
             Text(
-              item['range'].toString(),
+              item['role'],
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 10),
+            Text(
+              experienceController
+                  .changeLangRange(id: item['id'], context: context)
+                  .toString(),
               textAlign: TextAlign.center,
               style: const TextStyle(
                 color: Colors.white,
@@ -48,11 +72,27 @@ class TimeLinePage extends StatelessWidget {
                 ),
               ),
             ),
+            //const SizedBox(height: 10),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Text(
+                item['technologies'].toString(),
+                textAlign: TextAlign.justify,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                ),
+              ),
+            ),
+            SizedBox(height: Get.height / 30),
           ],
         ),
       ),
       startChild: Container(
-        color: Colors.black26,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: Colors.black26,
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,

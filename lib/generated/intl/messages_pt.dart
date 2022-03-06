@@ -24,19 +24,40 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "aboutMe": MessageLookupByLibrary.simpleMessage(
             "Sou desenvolvedor sênior PHP com mais de 10 anos de experiência em back-end e 7 anos com mobile, programo desde os 16 anos. Tenho grande experiência em análise, desenvolvimento e criação de aplicações usando as melhores tecnologias e atualmente estou trabalhando com React Native em uma plataforma com milhões de usuários únicos."),
+        "contact": MessageLookupByLibrary.simpleMessage("Sobre mim"),
         "descriptionBredi": MessageLookupByLibrary.simpleMessage(
-            "Bredi é uma empresa de desenvolvimento de software que desenvolve software para plataformas web e mobile"),
+            "\n\n Bredi é uma fábrica de software por demanda que trabalha com vários projetos e clientes, por um longo período fui responsável pela iniciativa mobile na empresa, na qual fui o precursor, além disso, trabalhei como fullstack desde a concepção até entrega.\n\n Trabalhei com back-end ao front-end, construção de api\'s, website, e-commerces e aplicativos (delivery, vendas, lojas e etc...)"),
         "descriptionDasa": MessageLookupByLibrary.simpleMessage(
-            "Dasa é uma empresa de desenvolvimento de software que desenvolve software para plataformas web e mobile"),
+            "\n\n Dasa é uma grande empresa multinacional da área da saúde, lá desempenho um papel no desenvolvimento, manutenção e elaboração da estrutura do App Nav Pacientes que consiste em uma plataforma integrada envolvendo consultas “online” por stream, gerenciamento de exames, vacinas e diagnósticos.\n\n Ajudo e acompanho o desenvolvimento do App, desenvolvendo novas funcionalidades e melhorando a experiência do usuário, assim como também auxílio a equipe com mentorias e colaboração com outros desenvolvedores."),
         "descriptionDextra": MessageLookupByLibrary.simpleMessage(
-            "Dextra é uma empresa de desenvolvimento de software que desenvolve software para plataformas web e mobile"),
+            "\n\n Na Dextra trabalhei alocado na Dasa desempenhando o papel de Dev. React Native, posteriormente foi adquirido pela Dasa."),
         "descriptionInfoPublic": MessageLookupByLibrary.simpleMessage(
-            "InfoPublic é uma empresa de desenvolvimento de software que desenvolve software para plataformas web e mobile"),
+            "\n\n A InfoPublic foi meu primeiro emprego, era uma empresa que trabalhava para empresas públicas locais. Fui responsável pela migração de muitos projetos públicos para web."),
         "descriptionJoin": MessageLookupByLibrary.simpleMessage(
-            "Join é uma empresa de desenvolvimento de software que desenvolve software para plataformas web e mobile"),
+            "\n\n Join é uma empresa de desenvolvimento de software, da qual fui alocado para o trabalhar no sistema do Porto de Santos, tranformando o sistema legado para um novo sistema web. Apesar do pouco tempo obtive grandes resultados e conhecimentos."),
         "myExperiences": MessageLookupByLibrary.simpleMessage("Experiências"),
         "myTechnicalSkillsSection":
             MessageLookupByLibrary.simpleMessage("Competências"),
+        "rangeBredi":
+            MessageLookupByLibrary.simpleMessage("mar de 2013 - fev de 2021"),
+        "rangeDasa":
+            MessageLookupByLibrary.simpleMessage("ago de 2021 - o momento"),
+        "rangeDextra":
+            MessageLookupByLibrary.simpleMessage("jun de 2021 - ago de 2021"),
+        "rangeInfoPublic":
+            MessageLookupByLibrary.simpleMessage("mar de 2011 - fev de 2013"),
+        "rangeJoin":
+            MessageLookupByLibrary.simpleMessage("fev de 2021 - abr de 2021"),
+        "softSCommunication":
+            MessageLookupByLibrary.simpleMessage("Boa comunicação"),
+        "softSCreativity": MessageLookupByLibrary.simpleMessage("Criatividade"),
+        "softSLearning":
+            MessageLookupByLibrary.simpleMessage("Aprendizado ativo"),
+        "softSMind": MessageLookupByLibrary.simpleMessage("Pensamento Crítico"),
+        "softSResolution": MessageLookupByLibrary.simpleMessage(
+            "Resolução de Problemas Complexos"),
+        "softSTolerance": MessageLookupByLibrary.simpleMessage(
+            "Resiliência, tolerância e flexibilidade"),
         "softSkills": MessageLookupByLibrary.simpleMessage("Interpessoais"),
         "title": MessageLookupByLibrary.simpleMessage("Meu perfil")
       };

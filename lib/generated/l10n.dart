@@ -70,10 +70,10 @@ class S {
     );
   }
 
-  /// `Technical Skills`
+  /// `Hard skills`
   String get myTechnicalSkillsSection {
     return Intl.message(
-      'Technical Skills',
+      'Hard skills',
       name: 'myTechnicalSkillsSection',
       desc: '',
       args: [],
@@ -100,51 +100,171 @@ class S {
     );
   }
 
-  /// `Dasa is a software development company that develops software for the web and mobile platforms`
+  /// `About me`
+  String get contact {
+    return Intl.message(
+      'About me',
+      name: 'contact',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `\n\n Dasa is a large multinacional company in the health area, there i perform a role in development, maintenance and elaboration of the App Nav Patients structure consists of an integrated platform involving online consulting consults by stream, vaccines and diagnosis.\n\n I help and follow up on App's development, developing new functions and improving user experience, as well as also assisting team with mentories and collaboration with other developers.`
   String get descriptionDasa {
     return Intl.message(
-      'Dasa is a software development company that develops software for the web and mobile platforms',
+      '\n\n Dasa is a large multinacional company in the health area, there i perform a role in development, maintenance and elaboration of the App Nav Patients structure consists of an integrated platform involving online consulting consults by stream, vaccines and diagnosis.\n\n I help and follow up on App\'s development, developing new functions and improving user experience, as well as also assisting team with mentories and collaboration with other developers.',
       name: 'descriptionDasa',
       desc: '',
       args: [],
     );
   }
 
-  /// `Dextra is a software development company that develops software for the web and mobile platforms`
+  /// `\n\n At Dextra i worked on Dasa playing the role of Dev. React Native, later i was acquired by Dasa.`
   String get descriptionDextra {
     return Intl.message(
-      'Dextra is a software development company that develops software for the web and mobile platforms',
+      '\n\n At Dextra i worked on Dasa playing the role of Dev. React Native, later i was acquired by Dasa.',
       name: 'descriptionDextra',
       desc: '',
       args: [],
     );
   }
 
-  /// `Join is a software development company that develops software for the web and mobile platforms`
+  /// `\n\n Join is a software development company, which i was allocated to work in the Port of Santos system, transforming the system to legacy to a new web system, despite the short time i got greatting results and knowledge agregates.`
   String get descriptionJoin {
     return Intl.message(
-      'Join is a software development company that develops software for the web and mobile platforms',
+      '\n\n Join is a software development company, which i was allocated to work in the Port of Santos system, transforming the system to legacy to a new web system, despite the short time i got greatting results and knowledge agregates.',
       name: 'descriptionJoin',
       desc: '',
       args: [],
     );
   }
 
-  /// `Bredi is a software development company that develops software for the web and mobile platforms`
+  /// `\n\n Bredi is a software factory on demand that works with many projects and clients, for a long time i was been responsible for many customer projects and mobile initiative on company (i was a precursor there). Besides i worked to make complete applications (back-end up until front-end), building of API's, websites, e-commerces and many types of mobile applications (deliverys, shops, sales and etc...)`
   String get descriptionBredi {
     return Intl.message(
-      'Bredi is a software development company that develops software for the web and mobile platforms',
+      '\n\n Bredi is a software factory on demand that works with many projects and clients, for a long time i was been responsible for many customer projects and mobile initiative on company (i was a precursor there). Besides i worked to make complete applications (back-end up until front-end), building of API\'s, websites, e-commerces and many types of mobile applications (deliverys, shops, sales and etc...)',
       name: 'descriptionBredi',
       desc: '',
       args: [],
     );
   }
 
-  /// `InfoPublic is a software development company that develops software for the web and mobile platforms`
+  /// `\n\n InfoPublic was my first job, it was a company that worked for local public companies. I was responsible been for the migration of many public projects to the web.`
   String get descriptionInfoPublic {
     return Intl.message(
-      'InfoPublic is a software development company that develops software for the web and mobile platforms',
+      '\n\n InfoPublic was my first job, it was a company that worked for local public companies. I was responsible been for the migration of many public projects to the web.',
       name: 'descriptionInfoPublic',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `aug 2021 - current`
+  String get rangeDasa {
+    return Intl.message(
+      'aug 2021 - current',
+      name: 'rangeDasa',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `jun 2021 - aug 2021`
+  String get rangeDextra {
+    return Intl.message(
+      'jun 2021 - aug 2021',
+      name: 'rangeDextra',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `feb 2021 - apr 2021`
+  String get rangeJoin {
+    return Intl.message(
+      'feb 2021 - apr 2021',
+      name: 'rangeJoin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `mar 2013 - feb 2021`
+  String get rangeBredi {
+    return Intl.message(
+      'mar 2013 - feb 2021',
+      name: 'rangeBredi',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `mar 2011 - feb 2013`
+  String get rangeInfoPublic {
+    return Intl.message(
+      'mar 2011 - feb 2013',
+      name: 'rangeInfoPublic',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Good comunication`
+  String get softSCommunication {
+    return Intl.message(
+      'Good comunication',
+      name: 'softSCommunication',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Resilience, tolerance and flexibility`
+  String get softSTolerance {
+    return Intl.message(
+      'Resilience, tolerance and flexibility',
+      name: 'softSTolerance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Complex Problem Solving`
+  String get softSResolution {
+    return Intl.message(
+      'Complex Problem Solving',
+      name: 'softSResolution',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Critical Thinking`
+  String get softSMind {
+    return Intl.message(
+      'Critical Thinking',
+      name: 'softSMind',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Creativity`
+  String get softSCreativity {
+    return Intl.message(
+      'Creativity',
+      name: 'softSCreativity',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Active learning`
+  String get softSLearning {
+    return Intl.message(
+      'Active learning',
+      name: 'softSLearning',
       desc: '',
       args: [],
     );

@@ -51,7 +51,7 @@ class _BodyComponentState extends State<BodyComponent> {
               SizedBox(
                 height: Get.height / 12,
               ),
-              tabController.chooseTable(context: context),
+              tabController.chooseTabs(context: context),
               SizedBox(
                 height: Get.height / 12,
               ),
