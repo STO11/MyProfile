@@ -99,6 +99,56 @@ class S {
       args: [],
     );
   }
+
+  /// `Dasa is a software development company that develops software for the web and mobile platforms`
+  String get descriptionDasa {
+    return Intl.message(
+      'Dasa is a software development company that develops software for the web and mobile platforms',
+      name: 'descriptionDasa',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dextra is a software development company that develops software for the web and mobile platforms`
+  String get descriptionDextra {
+    return Intl.message(
+      'Dextra is a software development company that develops software for the web and mobile platforms',
+      name: 'descriptionDextra',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Join is a software development company that develops software for the web and mobile platforms`
+  String get descriptionJoin {
+    return Intl.message(
+      'Join is a software development company that develops software for the web and mobile platforms',
+      name: 'descriptionJoin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bredi is a software development company that develops software for the web and mobile platforms`
+  String get descriptionBredi {
+    return Intl.message(
+      'Bredi is a software development company that develops software for the web and mobile platforms',
+      name: 'descriptionBredi',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `InfoPublic is a software development company that develops software for the web and mobile platforms`
+  String get descriptionInfoPublic {
+    return Intl.message(
+      'InfoPublic is a software development company that develops software for the web and mobile platforms',
+      name: 'descriptionInfoPublic',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

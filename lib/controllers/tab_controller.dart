@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myprofileweb/components/stats_component.dart';
 import 'package:myprofileweb/generated/l10n.dart';
+import 'package:myprofileweb/pages/timeline_page.dart';
 
 class TabControllerSkills extends GetxController {
   var tab = 0.obs;
@@ -61,8 +62,12 @@ class TabControllerSkills extends GetxController {
 
   containerTabChange({width}) {
     if (tab.value == 0) {
-      return SizedBox(width: width, child: StatsComponent());
+      return SizedBox(width: width, child: const StatsComponent());
     }
-    return Text('MUDOU');
+    if (tab.value == 1) {
+      return SizedBox(width: width, child: TimeLinePage());
+    }
+
+    return Text('MUDOU' + tab.value.toString());
   }
 }

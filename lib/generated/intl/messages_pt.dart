@@ -24,6 +24,16 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "aboutMe": MessageLookupByLibrary.simpleMessage(
             "Sou desenvolvedor sênior PHP com mais de 10 anos de experiência em back-end e 7 anos com mobile, programo desde os 16 anos. Tenho grande experiência em análise, desenvolvimento e criação de aplicações usando as melhores tecnologias e atualmente estou trabalhando com React Native em uma plataforma com milhões de usuários únicos."),
+        "descriptionBredi": MessageLookupByLibrary.simpleMessage(
+            "Bredi é uma empresa de desenvolvimento de software que desenvolve software para plataformas web e mobile"),
+        "descriptionDasa": MessageLookupByLibrary.simpleMessage(
+            "Dasa é uma empresa de desenvolvimento de software que desenvolve software para plataformas web e mobile"),
+        "descriptionDextra": MessageLookupByLibrary.simpleMessage(
+            "Dextra é uma empresa de desenvolvimento de software que desenvolve software para plataformas web e mobile"),
+        "descriptionInfoPublic": MessageLookupByLibrary.simpleMessage(
+            "InfoPublic é uma empresa de desenvolvimento de software que desenvolve software para plataformas web e mobile"),
+        "descriptionJoin": MessageLookupByLibrary.simpleMessage(
+            "Join é uma empresa de desenvolvimento de software que desenvolve software para plataformas web e mobile"),
         "myExperiences": MessageLookupByLibrary.simpleMessage("Experiências"),
         "myTechnicalSkillsSection":
             MessageLookupByLibrary.simpleMessage("Competências"),

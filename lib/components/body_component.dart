@@ -44,8 +44,8 @@ class _BodyComponentState extends State<BodyComponent> {
               SizedBox(width: Get.width),
               const AvatarComponent(),
               ResponsiveWidget(
-                mobile: _textAboutMe(width: Get.width / 1.2),
-                tablet: _textAboutMe(width: Get.width / 1.4),
+                mobile: _textAboutMe(width: Get.width / 1.1),
+                tablet: _textAboutMe(width: Get.width / 1.3),
                 web: _textAboutMe(width: Get.width / 1.8),
               ),
               SizedBox(
@@ -57,9 +57,9 @@ class _BodyComponentState extends State<BodyComponent> {
               ),
               ResponsiveWidget(
                 mobile:
-                    tabController.containerTabChange(width: Get.width / 1.2),
+                    tabController.containerTabChange(width: Get.width / 1.1),
                 tablet:
-                    tabController.containerTabChange(width: Get.width / 1.4),
+                    tabController.containerTabChange(width: Get.width / 1.3),
                 web: tabController.containerTabChange(width: Get.width / 1.8),
               ),
             ],
