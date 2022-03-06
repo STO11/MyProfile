@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:myprofileweb/components/avatar_component.dart';
 import 'package:myprofileweb/components/header_component.dart';
 import 'package:myprofileweb/components/stats_component.dart';
+import 'package:myprofileweb/constants/lang.dart';
 import 'package:myprofileweb/controllers/tab_controller.dart';
 import 'package:myprofileweb/generated/l10n.dart';
 import 'package:myprofileweb/utils/resolution.dart';

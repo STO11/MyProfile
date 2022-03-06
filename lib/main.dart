@@ -12,6 +12,7 @@ import 'drawings/background.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
+  S.load(Locale(defaultLang));
   runApp(const MyProfileApp());
 }
 
@@ -25,13 +26,9 @@ class MyProfileApp extends StatefulWidget {
 class _MyProfileAppState extends State<MyProfileApp> {
   @override
   Widget build(BuildContext context) {
-    S.load(const Locale(defaultLang));
     return GetMaterialApp(
       localizationsDelegates: const [
         S.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
       debugShowCheckedModeBanner: false,
