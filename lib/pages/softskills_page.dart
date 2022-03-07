@@ -11,7 +11,7 @@ class SoftSkillsPage extends StatelessWidget {
       child: Text(
         name,
         style: const TextStyle(
-          fontSize: 30,
+          fontSize: 20,
           fontWeight: FontWeight.bold,
           color: Colors.white,
         ),

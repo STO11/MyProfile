@@ -4,6 +4,7 @@ const myName = 'Suelton de Souza Lima';
 var myAge = calculateAge(DateTime(1989, 02, 11));
 const myLocation = 'Belém, PA, Brazil';
 const myLinkedin = 'https://www.linkedin.com/in/suelton-dev';
+const myGithub = 'https://github.com/STO11';
 
 calculateAge(DateTime birthDate) {
   DateTime currentDate = DateTime.now();

@@ -7,21 +7,21 @@ import 'package:url_launcher/url_launcher.dart';
 class ContactPage extends StatelessWidget {
   const ContactPage({Key? key}) : super(key: key);
 
-  Widget _fetchItems({name, email = false, link = false}) {
+  Widget _fetchItems({linkUrl, name, email = false, link = false}) {
     return MouseRegion(
       cursor:
           email || link ? SystemMouseCursors.click : SystemMouseCursors.text,
       child: GestureDetector(
         onTap: () => {
-          if (email) {_launchMail(name)},
-          if (link) {_launchLink(name)}
+          if (email) {_launchMail(linkUrl)},
+          if (link) {_launchLink(linkUrl)}
         },
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Text(
             name,
             style: TextStyle(
-              fontSize: 30,
+              fontSize: 20,
               fontWeight: FontWeight.bold,
               color: email || link ? Colors.blue : Colors.white,
               decoration: email || link
@@ -62,8 +62,9 @@ class ContactPage extends StatelessWidget {
           children: [
             _fetchItems(
                 name: myName + ', ' + myAge.toString() + ', ' + myLocation),
-            _fetchItems(name: myEmail, email: true),
-            _fetchItems(name: myLinkedin, link: true),
+            _fetchItems(name: 'E-mail', linkUrl: myEmail, email: true),
+            _fetchItems(name: 'Linkedin', linkUrl: myLinkedin, link: true),
+            _fetchItems(name: 'GitHub', linkUrl: myGithub, link: true),
           ],
         ),
       ),
