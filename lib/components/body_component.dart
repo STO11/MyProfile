@@ -58,7 +58,7 @@ class _BodyComponentState extends State<BodyComponent> {
               ),
               ResponsiveWidget(
                 mobile:
-                    tabController.containerTabChange(width: Get.width / 1.1),
+                    tabController.containerTabChange(width: Get.width / 0.8),
                 tablet:
                     tabController.containerTabChange(width: Get.width / 1.3),
                 web: tabController.containerTabChange(width: Get.width / 1.8),
