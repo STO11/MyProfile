@@ -14,7 +14,7 @@ final technicalSkills = [
 
 final languageSkills = [
   {"name": 'Portuguese', "step": 10},
-  {"name": 'English', "step": 5},
+  {"name": 'English', "step": 6},
   {"name": 'Spanish', "step": 3},
 ];
 
