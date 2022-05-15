@@ -60,10 +60,10 @@ class S {
     );
   }
 
-  /// `I'm a senior PHP developer with over 10 years of experience in back-end and 7 years with mobile, programming since I was 16 years old. I have extensive experience in analysis, system development and application creation using the best technologies. I worked as a fullstack in several technologies and currently working with react native on a platform with millions of unique users.`
+  /// `I'm tech lead and senior developer with over 10 years of experience in back-end and 7 years with mobile, programming since I was 16 years old. I have extensive experience in analysis, system development and application creation using the best technologies. I worked as a fullstack in several technologies and currently working with react native on a platform with millions of unique users.`
   String get aboutMe {
     return Intl.message(
-      'I\'m a senior PHP developer with over 10 years of experience in back-end and 7 years with mobile, programming since I was 16 years old. I have extensive experience in analysis, system development and application creation using the best technologies. I worked as a fullstack in several technologies and currently working with react native on a platform with millions of unique users.',
+      'I\'m tech lead and senior developer with over 10 years of experience in back-end and 7 years with mobile, programming since I was 16 years old. I have extensive experience in analysis, system development and application creation using the best technologies. I worked as a fullstack in several technologies and currently working with react native on a platform with millions of unique users.',
       name: 'aboutMe',
       desc: '',
       args: [],
@@ -110,10 +110,10 @@ class S {
     );
   }
 
-  /// `\n\n Dasa is a large multinacional company in the health area, there i perform a role in development, maintenance and elaboration of the App Nav Patients structure consists of an integrated platform involving online consulting consults by stream, vaccines and diagnosis.\n\n I help and follow up on App's development, developing new functions and improving user experience, as well as also assisting team with mentories and collaboration with other developers.`
+  /// `\n\n Dasa is a large multinacional company in the health area, there i perform a role in development, maintenance and elaboration of the App Nav Patients structure consists of an integrated platform involving online consulting consults by stream, vaccines and diagnosis.\n\n I work in front of the exam results squad (greater flow of users), together with multidisciplinary teams of developers, products and customers, bringing new ideas and supporting scrum ceremonies, technical performance and problem solving processes. \n\n I help and follow up on App's development, developing new functions and improving user experience, as well as also assisting team with mentories and collaboration with other developers.`
   String get descriptionDasa {
     return Intl.message(
-      '\n\n Dasa is a large multinacional company in the health area, there i perform a role in development, maintenance and elaboration of the App Nav Patients structure consists of an integrated platform involving online consulting consults by stream, vaccines and diagnosis.\n\n I help and follow up on App\'s development, developing new functions and improving user experience, as well as also assisting team with mentories and collaboration with other developers.',
+      '\n\n Dasa is a large multinacional company in the health area, there i perform a role in development, maintenance and elaboration of the App Nav Patients structure consists of an integrated platform involving online consulting consults by stream, vaccines and diagnosis.\n\n I work in front of the exam results squad (greater flow of users), together with multidisciplinary teams of developers, products and customers, bringing new ideas and supporting scrum ceremonies, technical performance and problem solving processes. \n\n I help and follow up on App\'s development, developing new functions and improving user experience, as well as also assisting team with mentories and collaboration with other developers.',
       name: 'descriptionDasa',
       desc: '',
       args: [],

@@ -41,7 +41,7 @@ final companies = [
     "name": "Dasa",
     "last_name": "",
     "range": "ago de 2021 - o momento",
-    "role": "Software Engineer - Senior React Native",
+    "role": "Tech Lead | Software Engineer - Senior React Native",
     "technologies":
         "\n React Native, Typescript, Javascript, Detox, Jest, Graphql with Apollo, Firebase, Design System, Scrum, Jira, Gitflow, CI | CD, Fastlane, Modular architecture"
   },
