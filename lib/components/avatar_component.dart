@@ -25,7 +25,7 @@ class AvatarComponent extends StatelessWidget {
             height: Get.height / 4,
             fit: BoxFit.cover,
             image: const NetworkImage(
-              'https://media-exp1.licdn.com/dms/image/C4D03AQHgc0GuLuGkSg/profile-displayphoto-shrink_800_800/0/1646876457748?e=1657756800&v=beta&t=HleHKwyJtBd0Ejc8zY5096pb8MHeSkpARWJG_qqD4s8',
+              'https://media-exp1.licdn.com/dms/image/C4D03AQHgc0GuLuGkSg/profile-displayphoto-shrink_800_800/0/1646876457748?e=1664409600&v=beta&t=nUSoz5o2fBuLU-qsV2MHMOQ2nXaJwW8wmk3D4C0CFZY',
             ),
             octoSet: OctoSet.circleAvatar(
               backgroundColor: Colors.red,
